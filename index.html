@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROJECT</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css   -->
+  </head>
+  <body>
+    <div>
+      <header
+        class="peer z-100 bg-white/80 backdrop-blur-md sticky top-0 border-b border-gray-200/30 shadow-2xs"
+      >
+        <!-- nav bar -->
+        <nav class="m-auto py-4 px-4 md:px-20 flex justify-between">
+          <div class="flex items-center">
+            <img src="src/assets/Images/icons/nav.svg" alt="icon" />
+            <h1 class="text-base/7 italic text-[#2947A9] font-bold">TheBox</h1>
+          </div>
+          <div>
+            <ul class="flex gap-[40px] md:flex hidden">
+              <li class="cursor-pointer font-medium">
+                <a href="#home">Home</a>
+              </li>
+              <li class="cursor-pointer font-medium">
+                <a href="#about">About Us</a>
+              </li>
+              <li class="cursor-pointer font-medium">
+                <a href="#project">Project</a>
+              </li>
+              <li class="cursor-pointer font-medium">
+                <a href="#services">Services</a>
+              </li>
+              <li
+                class="font-semibold text-[#F9995D] rounded-sm hover:bg-orange-300/10 transition duration-300"
+              >
+                <a href="#contact us">Contact Us</a>
+              </li>
+            </ul>
+            <button class="md:hidden block">
+              <i class="text-3xl fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+      </header>
+      <!-- hero section  -->
+      <section id="home" class="relative">
+        <div>
+          <div>
+            <img
+              src="src/assets/Images/Hero image.jpg"
+              alt=""
+              class="h-[400px] md:h-[472px] w-full object-cover bg-center"
+            />
+            <div
+              class="absolute inset-0 bg-linear-to-tr from-white via-transparent to-transparent"
+            ></div>
+          </div>
+          <h1
+            class="absolute top-1 left-0.5 font-semibold max-w-xl flex items-center h-full p-5 md:pl-25 text-4xl md:text-6xl md:w-1/2"
+          >
+            Building things is our mission.
+          </h1>
+        </div>
+        <div
+          class="absolute bg-blue-700 text-white right-0.5 bottom-0 w-[304px] h-[139px] pt-4 text-center px-2 flex flex-col justify-between"
+        >
+          <h3 class="font-bold">Feature Projects</h3>
+          <p class="text-md">The National University of Architecture</p>
+
+          <div class="flex -mx-2 bg-[#292E3D]">
+            <button
+              class="bg-[#292E3D] px-8 py-1 w-1/2 border-r flex item-center gap-[9px]"
+            >
+              <img
+                src="src/assets/Images/icons/left arrow.svg"
+                alt="icon"
+              />Back
+            </button>
+            <button
+              class="bg-[#292E3D] w-1/2 flex gap-[9px] items-center justify-center"
+            >
+              Next<img
+                src="src/assets/Images/icons/right arrow.svg"
+                alt="icon"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- reputation section -->
+      <section class="flex flex-col items-center py-17 gap-10">
+        <h2 class="text-[#292E3D] font-bold text-[26px]">Our Reputation</h2>
+
+        <div
+          class="flex md:flex-row flex-col md:w-[75%] w-[85%] mx-auto gap-5 md:gap-10"
+        >
+          <!-- card 1 -->
+          <div
+            class="border border-[#E0E3EB] md:px-3.5 px-10 py-6 rounded-sm md:text-left md:block flex flex-col items-center text-center"
+          >
+            <img src="src/assets/Images/icons/music icon.svg" alt="" />
+            <h3 class="text-[#3D445C] font-bold py-2">Best Services</h3>
+            <p class="text-[#858EAD] text-sm">
+              Nullam senectus porttitor in eget. Eget rutrum leo interdum.
+            </p>
+          </div>
+
+          <!-- card 2 -->
+          <div
+            class="border border-[#E0E3EB] md:px-3.5 px-10 py-6 rounded-sm md:text-left md:block flex flex-col items-center text-center"
+          >
+            <img src="src/assets/Images/icons/music icon.svg" alt="" />
+            <h3 class="text-[#3D445C] font-bold py-2">Best Services</h3>
+            <p class="text-[#858EAD] text-sm">
+              Nullam senectus porttitor in eget. Eget rutrum leo interdum.
+            </p>
+          </div>
+
+          <!-- card 3 -->
+          <div
+            class="border border-[#E0E3EB] md:px-3.5 px-10 py-6 rounded-sm md:text-left md:block flex flex-col items-center text-center"
+          >
+            <img src="src/assets/Images/icons/music icon.svg" alt="" />
+            <h3 class="text-[#3D445C] font-bold py-2">Best Services</h3>
+            <p class="text-[#858EAD] text-sm">
+              Nullam senectus porttitor in eget. Eget rutrum leo interdum.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- about us -->
+      <section id="about" class="w-[90%] md:w-[85%] mx-auto relative flex">
+        <img
+          src="src/assets/Images/grand image.jpg"
+          alt="about"
+          class="w-full md:w-[75%] h-50 md:h-122 object-cover md:shadow-xl"
+        />
+
+        <!-- about -->
+        <div
+          class="absolute right-0 top-full md:top-15 bg-[#2947A9] sm:w-full md:absolute md:w-[350px] lg:w-[450px] h-fit p-8 text-white shadow-xl"
+          id="#about"
+        >
+          <h3 class="font-bold text-xl py-2">About us</h3>
+          <p class="text-sm font-normal py-4 tracking-tight">
+            For more than 30 years we have been delivering world-class
+            construction and we’ve built many lasting relationships along the
+            way.
+          </p>
+          <p class="text-sm font-normal pb-6 tracking-tight">
+            We’ve matured into an industry leader and trusted resource for those
+            seeking quality, innovation and reliability when building in the
+            U.S.
+          </p>
+          <button
+            class="bg-white hover:bg-gray-200 text-[#2947A9] px-4 py-2 my-4 rounded-xs cursor-pointer text-sm font-medium"
+          >
+            Make on Our History
+          </button>
+        </div>
+      </section>
+      <!-- services section -->
+      <section
+        id="services"
+        class="mt-120 md:mt-20 bg-[#F6F8F7] py-10 flex flex-col items-center"
+      >
+        <h2 class="font-bold text-[#292E3D] text-2xl">Services</h2>
+        <div
+          class="text-center grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-x-20 md:gap-y-10 py-5 md:w-[75%] w-[85%] mx-auto"
+        >
+          <div
+            class="shadow-lg bg-white flex flex-col gap-3 items-center px-5 md:px-10 py-5 rounded-sm"
+          >
+            <img
+              src="src/assets/Images/icons/construction icon.svg"
+              alt="services"
+              class="border-b-2 border-base p-3 border-[#E0E3EB]"
+            />
+            <p class="text-[#2947A9] text-sm capitalize font-semibold">
+              construction
+            </p>
+          </div>
+
+          <div
+            class="shadow-lg bg-[#2947A9] flex flex-col gap-3 items-center px-5 md:px-10 py-5 rounded-sm"
+          >
+            <img
+              src="src/assets/Images/icons/renovation icon.svg"
+              alt="services"
+              class="border-b-2 border-base p-3 border-[#E0E3EB]"
+            />
+            <p class="text-white text-sm capitalize font-semibold">
+              Renovation
+            </p>
+          </div>
+
+          <div
+            class="shadow-lg bg-white flex flex-col gap-3 items-center px-10 py-5 rounded-sm"
+          >
+            <img
+              src="src/assets/Images/icons/consultation icon.svg"
+              alt="services"
+              class="border-b-2 border-base p-3 border-[#E0E3EB]"
+            />
+            <p class="text-[#2947A9] text-sm capitalize font-semibold">
+              consultation
+            </p>
+          </div>
+
+          <div
+            class="shadow-lg bg-[#2947A9] flex flex-col gap-3 items-center px-5 md:px-10 py-5 rounded-sm"
+          >
+            <img
+              src="src/assets/Images/icons/repair icon.svg"
+              alt="services"
+              class="border-b-2 border-base p-3 border-[#E0E3EB]"
+            />
+            <p class="text-white text-sm capitalize font-semibold">
+              Repair services
+            </p>
+          </div>
+
+          <div
+            class="shadow-lg bg-white flex flex-col gap-3 items-center px-5 md:px-10 py-5 rounded-sm"
+          >
+            <img
+              src="src/assets/Images/icons/architecture icon.svg"
+              alt="services"
+              class="border-b-2 border-base p-3 border-[#E0E3EB]"
+            />
+            <p class="text-[#2947A9] text-sm capitalize font-semibold">
+              Architecture
+            </p>
+          </div>
+
+          <div
+            class="shadow-lg bg-[#2947A9] flex flex-col gap-3 items-center px-5 md:px-10 py-5 rounded-sm"
+          >
+            <img
+              src="src/assets/Images/icons/electric icon.svg"
+              alt="services"
+              class="border-b-2 border-base p-3 border-[#E0E3EB]"
+            />
+            <p class="text-white text-sm capitalize font-semibold">electric</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="flex justify-between items-center w-full h-[600px]">
+        <div class="relative w-[70%]">
+          <div
+            class="absolute left-98 -top-45 z-20 flex flex-col gap-2 bg-white shadow-md pl-15 pr-15 py-4"
+          >
+            <span class="font-semibold text-5xl">84</span>
+            <p
+              class="border-l-4 pl-2 border-[#F9995D] text-md text-[#667299] text-nowrap"
+            >
+              Happy Clients
+            </p>
+            <img
+              src="src/assets/Images/icons/greet icon.svg"
+              alt="icon"
+              class="absolute w-12 -right-4 -top-4"
+            />
+          </div>
+          <div
+            class="absolute left-40 -top-30 flex flex-col gap-2 bg-white shadow-md pl-6 pr-15 py-4"
+          >
+            <span class="font-semibold text-5xl">123</span>
+            <p class="border-l-4 pl-2 border-[#F9995D] text-md text-[#667299]">
+              Projects Completed
+            </p>
+            <img
+              src="src/assets/Images/icons/doc icon.svg"
+              alt="icon"
+              class="absolute w-12 -left-4 -top-4"
+            />
+          </div>
+          <div
+            class="absolute left-83 -top-4 z-20 flex flex-col gap-2 bg-white shadow-md pl-6 pr-15 py-4"
+          >
+            <span class="font-semibold text-5xl">37</span>
+            <p class="border-l-4 pl-2 border-[#F9995D] text-md text-[#667299]">
+              Awards Win
+            </p>
+            <img
+              src="src/assets/Images/icons/trophy icon.svg"
+              alt="icon"
+              class="absolute w-12 -right-4 -top-4"
+            />
+          </div>
+          <div
+            class="absolute left-50 top-12 flex flex-col gap-2 bg-white shadow-md pl-6 pr-15 py-4"
+          >
+            <span class="font-semibold text-5xl">30</span>
+            <p class="border-l-4 pl-2 border-[#F9995D] text-md text-[#667299]">
+              Years In Business
+            </p>
+            <img
+              src="src/assets/Images/icons/note icon.svg"
+              alt="icon"
+              class="absolute w-12 -right-4 -bottom-4"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-6 w-[30%] m-30 px-20 py-4">
+          <h1 class="font-bold text-5xl text-[#2947A9]">30 Years Experience</h1>
+          <p class="font-normal text-[#525B7A]">
+            Our company has been the leading provided construction services to
+            clients throughout the USA since 1988.
+          </p>
+
+          <button
+            class="bg-[#2947A9] rounded-lg px-4 py-2 font-medium text-white w-fit"
+          >
+            Contact Us
+          </button>
+        </div>
+      </section>
+
+      <!-- consultation section -->
+      <section
+        class="relative w-full h-[300px] mb-[80px] bg-[url(./src/assets/images/consultation-image.jpg)] bg-center bg-cover bg-no-repeat bg-blend-color-dodge bg-black/60"
+      >
+        <div class="md:flex justify-center gap-[30px] p-[60PX] md:p-[110px]">
+          <div class="absolute inset-0"></div>
+          <div
+            class="md:w-[85%] w-[90%] mx-auto z-1 flex flex-wrap items-center justify-between gap-y-5"
+          >
+            <div class="flex flex-col gap-5">
+              <h2
+                class="text-white text-xl md:text-3xl font-bold tracking-wide"
+              >
+                Free consultation with exceptional quality
+              </h2>
+              <p class="text-white text-md md:text-lg tracking-wide">
+                Just one call away:
+                <a class="underline underline-offset-1" href="tel:+84 1102 2703"
+                  >+84 1102 2703</a
+                >
+              </p>
+            </div>
+          </div>
+          <button
+            class="mt-4 md:text-white border rounded-sm px-4 py-2 font-semibold text-md absolute right-25 cursor-pointer hover:bg-white/90 md:hover:bg-white/20 transition-colors duration-300"
+          >
+            Get your consultation
+          </button>
+        </div>
+      </section>
+
+      <!-- projects -->
+      <section id="project" class="py-10">
+        <div class="md:w-[85%] w-[90%] mx-auto">
+          <h2 class="text-black text-3xl my-3 font-semibold">Projects</h2>
+
+          <div class="md:flex justify-between mt-4">
+            <div class="my-8 md:my-0">
+              <ul
+                class="text-md text-medium flex md:flex-col gap-5 md:gap-3 list-none sticky top-30"
+              >
+                <li
+                  class="text-[#2947A9] font-bold cursor-pointer md:pl-2 pb-2 border-b-3 md:border-b-0 md:border-l-3 border-[#2947A9]"
+                >
+                  All
+                </li>
+                <li class="project-list text-[#C2C7D6]">Commercial</li>
+                <li class="project-list text-[#C2C7D6]">Residential</li>
+                <li class="project-list text-[#C2C7D6]">Other</li>
+              </ul>
+            </div>
+
+            <div>
+              <!-- images grid -->
+              <div class="grid md:grid-cols-2 grid-cols-1 gap-10 md:gap-5">
+                <!-- image 1 -->
+                <div class="w-full md:w-70 h-60">
+                  <img
+                    src="src/assets/Images/wildstone image.jpg"
+                    alt="consultation"
+                    class="w-full h-50 object-cover bg-cover"
+                  />
+                  <div class="text-white bg-[#2947A9] px-3 py-2">
+                    <span class="font-semibold text-sm"
+                      >Wildstone Infra Hotel</span
+                    >
+                    <p class="text-xs font-medium tracking-wide">
+                      2715 Ash Dr. San Jose, South Dakota
+                    </p>
+                  </div>
+                </div>
+
+                <!-- image 2 -->
+                <div class="w-full md:w-70 h-60">
+                  <img
+                    src="src/assets/Images/wishstone image.jpg"
+                    alt="consultation"
+                    class="w-full h-[200px] object-cover bg-cover"
+                  />
+                  <div class="text-white bg-[#2947A9] px-3 py-2">
+                    <span class="font-semibold text-sm"
+                      >Wish Stone Building</span
+                    >
+                    <p class="text-xs font-medium tracking-wide">
+                      2972 Westheimer Rd. Santa Ana, Illinois
+                    </p>
+                  </div>
+                </div>
+
+                <!-- image 3 -->
+                <div class="w-full md:w-70 h-60">
+                  <img
+                    src="src/assets/Images/house image.jpg"
+                    alt="consultation"
+                    class="w-full h-50 object-cover bg-cover"
+                  />
+                  <div class="text-white bg-[#2947A9] px-3 py-2">
+                    <span class="font-semibold text-sm"
+                      >Mr. Parkinston’s House</span
+                    >
+                    <p class="text-xs font-medium tracking-wide">
+                      3517 W. Gray St. Utica, Pennsylvania
+                    </p>
+                  </div>
+                </div>
+
+                <!-- image 4 -->
+                <div class="w-full md:w-70 h-60">
+                  <img
+                    src="src/assets/Images/ore image.jpg"
+                    alt="consultation"
+                    class="w-full h-50 object-cover bg-cover"
+                  />
+                  <div class="text-white bg-[#2947A9] px-3 py-2">
+                    <span class="font-semibold text-sm">Oregano Height</span>
+                    <p class="text-xs font-medium tracking-wide">
+                      2464 Royal Ln. Mesa, New Jersey
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- painations -->
+              <div class="flex gap-5 items-center justify-between py-8">
+                <button
+                  class="bg-[#292E3D] text-white w-full h-9 flex justify-center items-center gap-1"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="9"
+                    viewBox="0 0 16 9"
+                  >
+                    <rect width="18" height="9" fill="none" />
+                    <path
+                      fill="#fff"
+                      d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"
+                    />
+                    <path
+                      fill="#fff"
+                      d="M6 8.5a.47.47 0 0 1-.35-.15l-3.5-3.5c-.2-.2-.2-.51 0-.71L5.65.65c.2-.2.51-.2.71 0s.2.51 0 .71L3.21 4.51l3.15 3.15c.2.2.2.51 0 .71c-.1.1-.23.15-.35.15Z"
+                    />
+                  </svg>
+                  Back
+                </button>
+
+                <button>
+                  <img
+                    src="src/assets/Images/icons/PageControl (1).svg "
+                    class="w-full"
+                    alt=""
+                  />
+                </button>
+
+                <button class="bg-[#292E3D] text-white w-full h-9">
+                  Next &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- forms section -->
+      <section id="contact us" class="bg-[#F6F8F7] py-10 px-3">
+        <div
+          class="max-w-lg w-full text-center mx-auto flex flex-col items-center justify-center gap-5"
+        >
+          <h2 class="text-4xl text-[#292E3D] font-bold">
+            What can we do for you?
+          </h2>
+          <p class="text-[#292E3D] text-md font-medium">
+            We are ready to work on a project of any complexity, whether it’s
+            commercial or residential.
+          </p>
+
+          <form class="flex flex-col gap-5 md:max-w-3xl md:w-full w-[90%]">
+            <div class="flex w-full flex-col md:flex-row gap-7">
+              <input
+                type="text"
+                required
+                placeholder="Your Name*"
+                class="input-field px-4 py-2 input:placeholder:text-[#A3AAC2] text-black border border-gray-300 border-spacing-2 rounded-lg font-medium bg-white"
+              />
+
+              <input
+                type="email"
+                required
+                placeholder="Email*"
+                class="input-field px-4 py-2 input:placeholder:text-[#A3AAC2] text-black border border-gray-300 border-spacing-2 rounded-lg font-medium bg-white"
+              />
+            </div>
+
+            <div class="flex w-full flex-col md:flex-row gap-7">
+              <input
+                type="text"
+                required
+                placeholder="Reason for Contacting*"
+                class="input-field px-4 py-2 input:placeholder:text-[#A3AAC2] text-black border border-gray-300 border-spacing-2 rounded-lg font-medium bg-white"
+              />
+              <input
+                type="email"
+                required
+                placeholder="Phone*"
+                class="input-field px-4 py-2 input:placeholder:text-[#A3AAC2] text-black border border-gray-300 border-spacing-2 rounded-lg font-medium bg-white"
+              />
+            </div>
+
+            <div>
+              <textarea
+                name="message"
+                placeholder="Message"
+                rows="5"
+                class="resize-none w-full p-2 input:placeholder:text-[#A3AAC2] text-black input-field border border-gray-300 border-spacing-2 rounded-lg font-medium bg-white"
+              ></textarea>
+              <div class="flex gap-0.5">
+                <p class="text-left text-xs text-red-400">*</p>
+                <p class="text-[#A3AAC2]">indicates a required field</p>
+              </div>
+            </div>
+
+            <button class="bg-[#2947A9]  hover:bg-black/80 transition duration-300 cursor-pointer text-white px-20 py-2 mx-auto">
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- footer section -->
+      <footer class="bg-white">
+        <div
+          class="md:w-[85%] w-[90%] mx-auto flex flex-wrap gap-y-12 items-center justify-between py-10"
+        >
+          <!-- left -->
+          <div class="flex flex-col gap-6">
+            <p class="text-[#2947A9] text-sm font font-semibold">
+              ADDRESS:
+              <span class="text-black text-sm font-medium tracking-wide"
+                >6391 Elgin St. Celina, Delaware 10299</span
+              >
+            </p>
+            <p class="text-[#2947A9] text-sm font font-semibold">
+              PHONE:
+              <span class="text-black text-sm font-medium tracking-wide"
+                >+84 1102 2703</span
+              >
+            </p>
+            <p class="text-[#2947A9] text-sm font font-semibold">
+              EMAIL:
+              <span class="text-black text-sm font-medium tracking-wide"
+                >hello@thebox.com</span
+              >
+            </p>
+
+            <div class="flex items-center gap-2">
+              <img src="src/assets/Images/icons/nav.svg" alt="logo" />
+              <h1 class="text-base/7 italic text-[#2947A9] font-bold">
+                TheBox
+              </h1>
+            </div>
+          </div>
+
+          <!-- right -->
+          <div class="flex flex-col gap-6">
+            <p class="text-[#2947A9] text-sm font font-semibold">NEWSLETTER:</p>
+            <form class="flex gap-1">
+              <input
+                type="email"
+                placeholder="Your email here"
+                class="border border-base bg-white px-2 py-1 input:placeholder:text-[#A3AAC2] text-black focus:outline-1 focus:border-black rounded-sm text-sm font-medium"
+              />
+              <button
+                class="bg-orange-400 hover:bg-orange-500 transition duration-300 cursor-pointer text-white px-4 py-2 text-sm font-medium rounded-sm"
+              >
+                Subscribe
+              </button>
+            </form>
+
+            <p class="text-[#2947A9] text-sm font font-semibold">SOCIAL:</p>
+            <div class="flex gap-2">
+              <a href="#">
+                <img
+                  src="src/assets/Images/icons/facebook icon.svg"
+                  alt="facebook"
+                  class="w-7"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="src/assets/Images/icons/linkedin icon.svg"
+                  alt="linkedin"
+                  class="w-7"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="src/assets/Images/icons/twitter icon.svg"
+                  alt="twitter"
+                  class="w-7"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#2947A9] py-4 text-white text-sm font-medium">
+          <div class="w-[90%] md:w-[85%] mx-auto">
+            TheBox Company &copy; 2022. All Rights Reserved
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
