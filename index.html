@@ -23,8 +23,32 @@
   </head>
   <body>
     <div>
+      <div class="w-full fixed h-[100vh] z-30 bg-white hidden md:hidden" id="mobile-menu">
+            <button class="absolute right-2 top-4" onclick="closeMenu()">
+              <i class="text-3xl fa-solid fa-close"></i>
+            </button>
+            <ul class="flex flex-col gap-[20px] mt-30 p-5 md:flex">
+              <li class="cursor-pointer font-medium p-2 border-b border-b-1">
+                <a href="#home">Home</a>
+              </li>
+              <li class="cursor-pointer font-medium p-2 border-b border-b-1">
+                <a href="#about">About Us</a>
+              </li>
+              <li class="cursor-pointer font-medium p-2 border-b border-b-1">
+                <a href="#project">Project</a>
+              </li>
+              <li class="cursor-pointer font-medium p-2 border-b border-b-1">
+                <a href="#services">Services</a>
+              </li>
+              <li
+                class="font-semibold text-[#F9995D] rounded-sm hover:bg-orange-300/10 transition duration-300 p-2 border-b border-b-1"
+              >
+                <a href="#contact us">Contact Us</a>
+              </li>
+            </ul>
+          </div>
       <header
-        class="peer z-100 bg-white/80 backdrop-blur-md sticky top-0 border-b border-gray-200/30 shadow-2xs"
+        class="peer z-20 bg-white/80 backdrop-blur-md sticky top-0 border-b border-gray-200/30 shadow-2xs"
       >
         <!-- nav bar -->
         <nav class="m-auto py-4 px-4 md:px-20 flex justify-between">
@@ -52,12 +76,13 @@
                 <a href="#contact us">Contact Us</a>
               </li>
             </ul>
-            <button class="md:hidden block">
+            <button class="md:hidden block" onclick="openMenu()">
               <i class="text-3xl fa-solid fa-bars"></i>
             </button>
           </div>
         </nav>
       </header>
+       
       <!-- hero section  -->
       <section id="home" class="relative">
         <div>
@@ -265,10 +290,10 @@
       </section>
 
       <!-- Experience Section -->
-      <section class="flex justify-between items-center w-full h-[600px]">
-        <div class="relative w-[70%]">
+      <section class="flex justify-between flex-col gap-20 mt-50 md:mt-0 md:flex-row items-center w-full">
+        <div class="relative w-[70%] -ml-65 md:ml-0 scale-70 md:scale-100">
           <div
-            class="absolute left-98 -top-45 z-20 flex flex-col gap-2 bg-white shadow-md pl-15 pr-15 py-4"
+            class="absolute left-70 md:left-98 -top-45 z-20 flex flex-col gap-2 bg-white shadow-md pl-15 pr-15 py-4"
           >
             <span class="font-semibold text-5xl">84</span>
             <p
@@ -323,7 +348,7 @@
           </div>
         </div>
 
-        <div class="flex flex-col gap-6 w-[30%] m-30 px-20 py-4">
+        <div class="flex flex-col gap-6 w-100% md:w-[30%] m-30 px-20 py-4">
           <h1 class="font-bold text-5xl text-[#2947A9]">30 Years Experience</h1>
           <p class="font-normal text-[#525B7A]">
             Our company has been the leading provided construction services to
@@ -648,5 +673,17 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      const menu = document.querySelector("#mobile-menu");
+
+      function openMenu(){
+          menu.style.display = "block";
+      };
+
+      function closeMenu(){
+          menu.style.display = "none";
+      }
+    </script>
   </body>
 </html>
